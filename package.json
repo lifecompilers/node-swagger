@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:koa": "node examples/koa/index.js",
+    "dev:koa": "nodemon examples/koa/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,10 @@
     "path": "^0.12.7",
     "swagger-jsdoc": "^1.9.7",
     "swagger-ui-express": "^3.0.9"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "koa": "^2.5.1",
+    "nodemon": "^1.17.4"
   }
 }
