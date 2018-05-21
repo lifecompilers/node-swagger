@@ -1,0 +1,25 @@
+{
+  "name": "node-swagger",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifecompilers/node-swagger.git"
+  },
+  "author": "LifeCOMPILERS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifecompilers/node-swagger/issues"
+  },
+  "homepage": "https://github.com/lifecompilers/node-swagger#readme",
+  "dependencies": {
+    "koa2-swagger-ui": "^2.9.1",
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^3.0.9"
+  }
+}
