@@ -1,2 +1,6 @@
-# node-swaggerui
-Swagger UI for Node Express and Koa Frameworks
+# Node-SwaggerUI
+Adds middleware to your Koa or Express app to serve the Swagger UI.
+This acts as living documentation for your API.
+
+
+
