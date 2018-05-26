@@ -4,8 +4,10 @@ const swagger = require('../../lib/')
 const PORT = 9002
 const app = new Express()
 
-app.use('/swagger', swagger.express({ routePrefix: false }))
+app.use('/swagger', swagger.express())
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Express app is listening at PORT ${PORT}`)
 })
+
+module.exports = server

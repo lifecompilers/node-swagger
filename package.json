@@ -8,8 +8,23 @@
     "express": "node examples/express/index.js",
     "dev:koa": "nodemon examples/koa/index.js",
     "dev:express": "nodemon examples/express/index.js",
-    "lint": "standard lib/*.js examples/**/*.js",
-    "code-format": "standard --fix lib/*.js examples/**/*.js"
+    "lint": "standard lib/*.js examples/**/*.js tests/**/*.js",
+    "code-format": "standard --fix lib/*.js examples/**/*.js tests/**/*.js",
+    "test": "jest",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint && npm test"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx}"
+    ],
+    "verbose": true
   },
   "repository": {
     "type": "git",
@@ -28,15 +43,18 @@
   },
   "homepage": "https://github.com/lifecompilers/node-swaggerui#readme",
   "dependencies": {
-    "handlebars": "^4.0.11",
-    "lodash.defaultsdeep": "^4.6.0"
+    "handlebars": "4.0.11",
+    "lodash.defaultsdeep": "4.6.0"
   },
   "devDependencies": {
-    "express": "^4.16.3",
-    "koa": "^2.5.1",
-    "koa-router": "^7.4.0",
-    "nodemon": "^1.17.5",
-    "standard": "^11.0.1",
+    "express": "4.16.3",
+    "husky": "^0.14.3",
+    "jest": "23.0.0",
+    "koa": "2.5.1",
+    "koa-router": "7.4.0",
+    "nodemon": "1.17.5",
+    "standard": "11.0.1",
+    "supertest": "3.1.0",
     "swagger-ui-dist": "3.15.0"
   }
 }
