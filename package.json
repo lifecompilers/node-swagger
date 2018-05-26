@@ -1,0 +1,42 @@
+{
+  "name": "node-swaggerui",
+  "version": "0.0.1",
+  "description": "Swagger UI for Node Express and Koa Frameworks",
+  "main": "lib/index.js",
+  "scripts": {
+    "koa": "node examples/koa/index.js",
+    "express": "node examples/express/index.js",
+    "dev:koa": "nodemon examples/koa/index.js",
+    "dev:express": "nodemon examples/express/index.js",
+    "lint": "standard lib/*.js examples/**/*.js",
+    "code-format": "standard --fix lib/*.js examples/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifecompilers/node-swaggerui.git"
+  },
+  "keywords": [
+    "Swagger",
+    "koa",
+    "express",
+    "node"
+  ],
+  "author": "LifeCOMPILERS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifecompilers/node-swaggerui/issues"
+  },
+  "homepage": "https://github.com/lifecompilers/node-swaggerui#readme",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "lodash.defaultsdeep": "^4.6.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.17.5",
+    "standard": "^11.0.1",
+    "swagger-ui-dist": "3.15.0"
+  }
+}
