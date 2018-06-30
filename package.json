@@ -1,6 +1,6 @@
 {
   "name": "swaggerui-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Swagger UI for Node Express and Koa Frameworks",
   "main": "lib/index.js",
   "private": false,
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lifecompilers/node-swaggerui.git"
+    "url": "git+https://github.com/lifecompilers/swaggerui-node.git"
   },
   "keywords": [
     "Swagger",
@@ -40,9 +40,9 @@
   "author": "LifeCOMPILERS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lifecompilers/node-swaggerui/issues"
+    "url": "https://github.com/lifecompilers/swaggerui-node/issues"
   },
-  "homepage": "https://github.com/lifecompilers/node-swaggerui#readme",
+  "homepage": "https://github.com/lifecompilers/swaggerui-node#readme",
   "dependencies": {
     "handlebars": "4.0.11",
     "lodash.defaultsdeep": "4.6.0"
