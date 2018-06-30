@@ -1,8 +1,9 @@
 {
-  "name": "node-swaggerui",
-  "version": "0.0.1",
+  "name": "swaggerui-node",
+  "version": "1.0.0",
   "description": "Swagger UI for Node Express and Koa Frameworks",
   "main": "lib/index.js",
+  "private": false,
   "scripts": {
     "koa": "node examples/koa/index.js",
     "express": "node examples/express/index.js",
